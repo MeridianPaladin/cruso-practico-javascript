@@ -105,7 +105,7 @@ function calcularPerimetroCirculo() {
     document.getElementById("InputCirculoRadio").value
   );
   const diametro = parseInt(diametroCirculo(radioCirculo));
-  const perimetro = perimetroCirculo(diametro) / 2;
+  const perimetro = perimetroCirculo(diametro)/2;
   alert(perimetro);
 }
 

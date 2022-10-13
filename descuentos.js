@@ -5,14 +5,20 @@ function calcularPrecioConDescuento(precio, descuento) {
 }
 
 function calcularPrecioTotal() {
-  const Price = document.getElementById("InputPrice");
-  const precio = Price.value;
+  const precio = document.getElementById("InputPrice").value;
+  // const precio = Price.value;
 
-  const Discount = document.getElementById("InputDiscount");
-  const descuento = Discount.value;
+  const descuento = document.getElementById("InputDiscount").value;
+  // const descuento = Discount.value;
 
   const total = calcularPrecioConDescuento(precio, descuento);
 
   const resultado = document.getElementById("Resultado");
   resultado.innerText = "El total a pagar es: $" + total;
 }
+
+const btn = document.getElementById("calculoBtn");
+
+btn.addEventListener("click", function () {
+  calcularPrecioTotal();
+});
